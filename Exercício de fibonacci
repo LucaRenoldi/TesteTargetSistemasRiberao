@@ -1,0 +1,25 @@
+1) 
+function isFibonacci(number){
+    if(number === 0 || number === 1){
+        console.log("Número pertence a sequência de Fibonacci");
+        return;
+    }
+    
+    var fibonacci = [0,1];
+    var index = 1;
+    var nextNumber = 0;
+    
+    while(nextNumber <= number){
+        if(fibonacci.includes(number)){
+            console.log("Número pertence a sequência de Fibonacci");
+            return;
+        }
+        
+        nextNumber = fibonacci[index - 1] + fibonacci[index];
+        fibonacci.push(nextNumber);
+        index++;
+    }
+    
+    console.log("Número não pertence a sequência de Fibonacci");
+    
+}
