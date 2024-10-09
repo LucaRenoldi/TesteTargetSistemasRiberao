@@ -1,0 +1,18 @@
+function hasA(string){
+    var verification = false;
+    var qtdA = 0;
+    
+    for(let i = 0; i < string.length; i++){
+        if(string[i] == "a" || string[i] == "A" || string[i] == "Á" || string[i] == "á" || string[i] == "à" || string[i] == "À" || string[i] == "ã" || string[i] == "Ã" || string[i] == "ä" || string[i] == "Ä"){
+            verification = true;
+            qtdA++;
+        }
+    }
+    
+    if(verification == true){
+        console.log("Tem a letra 'a' na palavra e ela aparece: " + qtdA + " vezes" )        
+    }
+    else{
+        console.log("Não tem a letra 'a' na palavra")
+    }
+}
