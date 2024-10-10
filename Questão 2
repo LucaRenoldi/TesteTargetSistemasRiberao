@@ -1,3 +1,7 @@
+// 2) Verificar se uma palavra tem a letra 'a' tanto minuscula quanto maiúscula.
+
+
+//Resposta
 function hasA(string){
     var verification = false;
     var qtdA = 0;
@@ -16,3 +20,10 @@ function hasA(string){
         console.log("Não tem a letra 'a' na palavra")
     }
 }
+
+//Definindo as palavras
+hasA("Olá")
+hasA("Ele")
+hasA("Avião")
+hasA("Cadeirada")
+hasA("Ríspido")
